@@ -4,13 +4,13 @@ public class Main {
         CreditPaymentService service = new CreditPaymentService();
 
 
-        int timeoneyear = service.calculate(12);
-        System.out.println(timeoneyear);
+        int timeOneYear = service.calculate( 12, 9.99f, 1000000);
+        System.out.println(timeOneYear);
 
-        int timetwoyaer = service.calculate(24);
-        System.out.println(timetwoyaer);
+        int timeTwoYaer = service.calculate(24, 9.99f,1000000);
+        System.out.println(timeTwoYaer);
 
-        int timethreeyear = service.calculate(36);
-        System.out.println(timethreeyear);
+        int timeThreeYear = service.calculate(36, 9.99f,1000000);
+        System.out.println(timeThreeYear);
     }
 }
