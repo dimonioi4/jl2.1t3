@@ -1,8 +1,7 @@
 public class CreditPaymentService {
-    public int calculate (int time) {
+    public int calculate (int time, float percent, int summ) {
 
-        int summ = 1000000;
-        float percent = (float) 9.99;
+
         float c = percent / time;
         float q = (float) c / 100; // месячная процентная ставка
         float b = 1 + q;
@@ -10,8 +9,8 @@ public class CreditPaymentService {
         float q1 = q * a; // левая часть деления
         float q2 = a - 1;// правая часть деления
         float totalq = q1 / q2; // Коэффициент аннуитента
-        int paymonth = (int) (totalq * summ);
+        int payMonth = (int) (totalq * summ);
 
-        return paymonth;
+        return payMonth;
     }
 }
